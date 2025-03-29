@@ -15,7 +15,6 @@ describe('Rijksmuseum API Tests', () => {
       expect(response.body.count).toBeGreaterThan(0);
   });
 
-
   it('should return error for missing API key', async () => {
     await api
       .get(collectionApi('en'))

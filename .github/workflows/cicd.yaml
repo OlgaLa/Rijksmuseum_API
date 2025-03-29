@@ -8,7 +8,7 @@ on:
 
 jobs:
   execute-tests:
-    name: Checout and execute tests
+    name: Checkout and execute tests
     runs-on: ubuntu-latest
     env:
       ACCESS_KEY: ${{ secrets.ACCESS_KEY }}

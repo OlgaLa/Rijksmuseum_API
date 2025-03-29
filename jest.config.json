@@ -1,0 +1,25 @@
+{
+    "moduleFileExtensions": ["js", "json", "ts"],
+    "rootDir": "tests",
+    "testRegex": ".*\\.spec\\.ts$",
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.(ts|js)$": "ts-jest"
+    },
+    "reporters": [
+      [
+        "github-actions",
+        {
+          "silent": false
+        }
+      ],      
+      "summary",
+      [
+        "jest-ctrf-json-reporter",
+        {
+          "outputDir": "reports",
+          "outputFile": "report.json"
+        }
+      ]
+     ]
+  }
